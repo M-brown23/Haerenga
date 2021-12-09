@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Haerenga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+</head>
+
+<body>
+
+
+  <div class="home">
+
+    <div style="padding-top: 30px;" class="container">
+      <div class="logo">
+        <img src="../summative-b/img/TNZ_logo.png" alt="" width="130" />
+      </div>
+      <nav class="navlist">
+        <ul class='ul'>
+          <li class="list"><a style="color:#faf9f6" href="#footer">What is Project Haerenga?</li></a>
+          <li class="list"><a style="color:#faf9f6" href="#footer">FAQ</li></a>
+          <li class="list"><a style="color:#faf9f6" href="#footer">Contact</li></a>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container-3">
+          <div class="row">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Welcome to Project Haerenga</h1>
+                <h3 style="color: #FAF9F6; " class="header">Make your reservation</h3>
+              </div>
+              <form>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select id="people" class="form-control" required>
+                        <option value="option" selected hidden>Residents</option>
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        <option> 4 </option>
+                      </select>
+                      <span class="select-arrow"></span>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select id="nights" class="form-control" required>
+                        <option value="nights" selected hidden>Nights</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Adults</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select id="location" class="form-control" required>
+                        <option selected hidden>Location</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="form-btn">
+                  <button id="button" class="submit-btn"> <a class="link" href="#first"> Book Now</button></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="info">
+    <!-- Hotel selection cards begins -->
+
+    <div id="leftColumn" class="row-2">
+      <div class="column left" style="">
+        <div id="first" class="wrapper">
+          <h1>Ohakune</h1>
+          <div class="image i1"></div>
+          <div class="details">
+            <h2>Powderhorn Chateau</h2>
+            <h1>Total:</h1>
+            <h1 id="hosteltotal"></h1>
+            <h1 id="hostelpernights"></h1>
+            <h1 id="hostelnights"></h1>
+            <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" data-toggle="modal" data-target="#myModal-5">Menu</button>
+          </div>
+        </div>
+      </div>
+      <div class="column right" style="">
+        <div id="second" class="wrapper">
+          <h1>Taumarunui</h1>
+          <div class="image i2"></div>
+          <div class="details">
+            <h2>Forgotten World</h2>
+            <h1>Total:</h1>
+            <h1 id="moteltotal"></h1>
+            <h1 id="motelnights"></h1>
+            <h1 id="motelpernights"></h1>
+            <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" data-toggle="modal" data-target="#myModal-4">Menu</button>
+          </div>
+        </div>
+      </div>
+      <div class="column right" style="">
+        <div id="third" class="wrapper">
+          <h1>Piopio</h1>
+          <div class="image i3"></div>
+          <div class="details">
+            <h2>Owls Nest</h2>
+            <h1>Total:</h1>
+            <h1 id="hoteltotal"></h1>
+            <h1 id="hotelnights"></h1>
+            <h1 id="hotelpernights"></h1>
+            <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" data-toggle="modal" data-target="#myModal-3">Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column right" style="">
+        <div id="fourth" class="wrapper">
+          <h1>Te Kuiti</h1>
+          <div class="image i4"></div>
+          <div class="details">
+            <h2>Ranger's Inn</h2>
+            <h1>Total:</h1>
+            <h1 id="housetotal"></h1>
+            <h1 id="housenights"></h1>
+            <h1 id="housepernights"></h1>
+            <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" data-toggle="modal" data-target="#myModal-2">Menu</button>
+          </div>
+        </div>
+      </div>
+      <!-- Hotel selection cards ends -->
+
+      <!-- menu modal -->
+      <div class="modal fade" id="myModal-5" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="padding">
+                <div class="row">
+                  <div class="container-fluid d-flex justify-content-center">
+                    <div class="paper preview-1">
+                      <div class="box">
+                        <div class="bar">
+                          <h2>Menu</h2>
+                          <div class="action">Done</div>
+                        </div>
+                        <div class="item coffee">
+                          <div class="box">
+                            <div class="item-icon coffee"></div>
+                            <p>Coffee</p>
+                            <div class="detail">
+                              <div>
+                                <p>Espresso</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cappuccino</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Latte</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item sweet">
+                          <div class="box">
+                            <div class="item-icon sweet"></div>
+                            <p>Breakfast</p>
+                            <div class="detail">
+                              <div>
+                                <p>Egg Benedict</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Pancakes</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cereal</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item food">
+                          <div class="box">
+                            <div class="item-icon food"></div>
+                            <p>Food</p>
+                            <div class="detail">
+                              <div>
+                                <p>Lunch</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Dinner</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Desert</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item drink">
+                          <div class="box">
+                            <div class="item-icon drink"></div>
+                            <p>Drink</p>
+                            <div class="detail">
+                              <div>
+                                <p>Water</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Soda</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Juice</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu modal -->
+      <div class="modal fade" id="myModal-4" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="padding">
+                <div class="row">
+                  <div class="container-fluid d-flex justify-content-center">
+                    <div class="paper preview-1">
+                      <div class="box">
+                        <div class="bar">
+                          <h2>Menu</h2>
+                          <div class="action">Done</div>
+                        </div>
+                        <div class="item coffee">
+                          <div class="box">
+                            <div class="item-icon coffee"></div>
+                            <p>Coffee</p>
+                            <div class="detail">
+                              <div>
+                                <p>Espresso</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cappuccino</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Latte</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item sweet">
+                          <div class="box">
+                            <div class="item-icon sweet"></div>
+                            <p>Breakfast</p>
+                            <div class="detail">
+                              <div>
+                                <p>Egg Benedict</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Pancakes</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cereal</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item food">
+                          <div class="box">
+                            <div class="item-icon food"></div>
+                            <p>Food</p>
+                            <div class="detail">
+                              <div>
+                                <p>Lunch</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Dinner</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Desert</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item drink">
+                          <div class="box">
+                            <div class="item-icon drink"></div>
+                            <p>Drink</p>
+                            <div class="detail">
+                              <div>
+                                <p>Water</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Soda</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Juice</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu modal -->
+      <div class="modal fade" id="myModal-3" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="padding">
+                <div class="row">
+                  <div class="container-fluid d-flex justify-content-center">
+                    <div class="paper preview-1">
+                      <div class="box">
+                        <div class="bar">
+                          <h2>Menu</h2>
+                          <div class="action">Done</div>
+                        </div>
+                        <div class="item coffee">
+                          <div class="box">
+                            <div class="item-icon coffee"></div>
+                            <p>Coffee</p>
+                            <div class="detail">
+                              <div>
+                                <p>Espresso</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cappuccino</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Latte</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item sweet">
+                          <div class="box">
+                            <div class="item-icon sweet"></div>
+                            <p>Breakfast</p>
+                            <div class="detail">
+                              <div>
+                                <p>Egg Benedict</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Pancakes</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cereal</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item food">
+                          <div class="box">
+                            <div class="item-icon food"></div>
+                            <p>Food</p>
+                            <div class="detail">
+                              <div>
+                                <p>Lunch</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Dinner</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Desert</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item drink">
+                          <div class="box">
+                            <div class="item-icon drink"></div>
+                            <p>Drink</p>
+                            <div class="detail">
+                              <div>
+                                <p>Water</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Soda</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Juice</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu modal -->
+      <div class="modal fade" id="myModal-2" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="padding">
+                <div class="row">
+                  <div class="container-fluid d-flex justify-content-center">
+                    <div class="paper preview-1">
+                      <div class="box">
+                        <div class="bar">
+                          <h2>Menu</h2>
+                          <div class="action">Done</div>
+                        </div>
+                        <div class="item coffee">
+                          <div class="box">
+                            <div class="item-icon coffee"></div>
+                            <p>Coffee</p>
+                            <div class="detail">
+                              <div>
+                                <p>Espresso</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cappuccino</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Latte</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item sweet">
+                          <div class="box">
+                            <div class="item-icon sweet"></div>
+                            <p>Breakfast</p>
+                            <div class="detail">
+                              <div>
+                                <p>Egg Benedict</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Pancakes</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Cereal</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item food">
+                          <div class="box">
+                            <div class="item-icon food"></div>
+                            <p>Food</p>
+                            <div class="detail">
+                              <div>
+                                <p>Lunch</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Dinner</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Desert</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="item drink">
+                          <div class="box">
+                            <div class="item-icon drink"></div>
+                            <p>Drink</p>
+                            <div class="detail">
+                              <div>
+                                <p>Water</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+
+                                </div>
+                              </div>
+                              <div>
+                                <p>Soda</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Juice</p>
+                                <div class="counter">
+                                  <span class="number">0</span>
+                                  <div class="plus">+</div>
+                                  <div class="minus">-</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="padding">
+                <div class="row">
+                  <div class="container-fluid d-flex justify-content-center">
+                    <div class="">
+                      <div class="card">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col"> <span>Credit / Debit Card Payment</span> </div>
+                            <div class="col"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+                          </div>
+                        </div>
+                        <div class="card-body" style="">
+                          <div class="row">
+                            <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="cc-number" placeholder="•••• •••• •••• ••••"
+                                required> </div>
+                            <div class="">
+                              <div class="form-group"> <label for="cc-exp" class="control-label">CARD EXPIRY</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="cc-exp" placeholder="•• / ••" required> </div>
+                            </div>
+                            <div class="card-body">
+                              <div class="form-group"> <label for="cc-cvc" class="control-label">CARD CVC</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="••••" required> </div>
+                            </div>
+                            <div class="form-group"> <label for="cc-cvc" class="control-label">CARD HOLDER NAME</label> <input type="text" class="input-lg form-control cc cvc"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-2">
+
+    <div class="video">
+      <!-- The video -->
+      <video id="myVideo" style=" margin: 25px; width:96.8%; margin-top:40px;" controls>
+        <source src="img/yt1s.com - 100 Pure New Zealand  A Welcoming Journey.mp4" type="video/mp4">
+      </video>
+
+      <footer>
+        <div id="footer" class="column-2">
+          <a class="footer_title">Project Haerenga</a>
+          <a class="paragraph">Tourism New Zealand is the marketing agency responsible for promoting New Zealand as a
+            tourism destination internationally. It is the trading name of the New Zealand Tourism Board, a Crown
+            entity established under the New Zealand Tourism Board Act 1991 and is launching a new project titled
+            “Project Haerenga”. A project to advertise the smaller unpopular regions in New Zealand. </a>
+          <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="column-2">
+          <a class="footer_title">OTHER LINKS</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Ticket</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="column-2">
+          <a class="footer_title">SHORTCUT</a>
+          <a href="">Our Services</a>
+          <a href="">Our Blog</a>
+          <a href="">Our Projects</a>
+          <a href="">About Us</a>
+        </div>
+        <div class="column-2">
+          <a class="footer_title">LATEST NEWS</a>
+          <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,trees"></a>
+          <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,tree"></a>
+          <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,plant"></a>
+          <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,forest"></a>
+          <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,afforestation"></a>
+        </div>
+        <div class="column-2">
+          <a class="footer_title">GET IN TOUCH</a>
+          <a title="Address"><i class="fa fa-map-marker"></i> 007, Queen st., Auckland, New Zealand - 2496</a>
+          <a href="emailto:" title="Email"><i class="fa fa-envelope"></i> NzHaerenga@NZtourism.co.nz</a>
+          <a href="tel:" title="Contact"><i class="fa fa-phone"></i> +(09)-7869-20105</a>
+        </div>
+
+        <div class="sub-footer">
+          © CopyRights 2021 New Zealand Tourism Agency || All rights reserved.
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+
+
+
+
+  <script src="../summative-b/js/custom.js"></script>
+</body>
+
+</html>
